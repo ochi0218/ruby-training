@@ -7,5 +7,6 @@ class StoreController < ApplicationController
     session[:counter] += 1
 
     @products = Product.order(:title)
+    @cart = current_cart
   end
 end
