@@ -1,0 +1,7 @@
+Dear <%= @order.name %>
+
+Pragmaticストアでのご注文、ありがとうございます。
+
+以下の品目を注文されました。
+<%= render @order.line_items %>
+
